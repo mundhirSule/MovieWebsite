@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="app.js" defer></script>
+		<script
+			src="https://kit.fontawesome.com/b7fd0e34c8.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://www.youtube.com/iframe_api"></script>
+		<title>Movie Review</title>
+	</head>
+	<body>
+		<div class="main-container">
+			<section class="details">
+				<img
+					class="movie-poster-img"
+					src="https://evildeadarchives.com/movies/ed_rise/posters/ed_rise_poster_02.jpg"
+					alt="movie-img"
+				/>
+				<div class="movie-details-wrapper">
+					<div class="movie-title-container">
+						<h1 class="movie-name">EVIL DEAD RISE</h1>
+						<div class="release-details">
+							<h2 class="date">2023</h2>
+							<p class="separator"></p>
+							<h2 class="pg-rating">R</h2>
+							<p class="separator"></p>
+							<h2 class="duration">1h 36m</h2>
+						</div>
+					</div>
+					<div class="action-btn-container">
+						<span class="action-btn">
+							<i class="fa fa-heart" aria-hidden="true"></i>
+							<p>ADD TO FAVORITE</p>
+						</span>
+
+						<span class="action-btn">
+							<i class="fa fa-share-alt" aria-hidden="true"></i>
+							<p>SHARE</p>
+						</span>
+					</div>
+
+					<div class="ratings-wrapper">
+						<div class="movie-rating">
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<p class="rating">6.9</p>
+							<p>/10</p>
+						</div>
+
+						<span class="user-rate">
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+							<p>RATE</p>
+						</span>
+					</div>
+
+					<div class="extra-details">
+						<div class="genre">HORROR</div>
+						<div class="movie-description">
+							A twisted tale of two estranged sisters whose reunion is cut short
+							by the rise of flesh-possessing demons, thrusting them into a
+							primal battle for survival as they face the most nightmarish
+							version of family imaginable.
+						</div>
+						<div class="extra">
+							<div class="extra-grid">
+								<p class="name-column">Director</p>
+								<p class="names">Lee Cronin</p>
+							</div>
+
+							<div class="extra-grid">
+								<p class="name-column">Writer</p>
+								<p class="names">Lee Cronin</p>
+							</div>
+
+							<div class="extra-grid">
+								<p class="name-column">Cast</p>
+								<p class="names">Lee Cronin</p>
+							</div>
+						</div>
+
+						<div class="reviews">
+							<span>
+								<h2>200</h2>
+								<p>user reviews</p>
+							</span>
+
+							<span>
+								<h2>200</h2>
+								<p>critic reviews</p>
+							</span>
+						</div>
+
+						<div class="metascore">
+							<h2>60</h2>
+							<p>Metascore</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="trailer" id="player"></section>
+		</div>
+	</body>
+
+	<script>
+		// This function creates an <iframe> (and YouTube player) after the API code downloads.
+		function onYouTubeIframeAPIReady() {
+			// Create a new YouTube player.
+			var player = new YT.Player('player', {
+				height: '360',
+				width: '640',
+				videoId: 'BqQNO7BzN08', // Replace with the YouTube video ID you want to play.
+				playerVars: {
+					autoplay: 0, // Set to 1 if you want the video to autoplay.
+				},
+			});
+		}
+	</script>
+</html>

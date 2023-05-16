@@ -10,7 +10,8 @@
 			src="https://kit.fontawesome.com/b7fd0e34c8.js"
 			crossorigin="anonymous"
 		></script>
-		<script src="https://www.youtube.com/iframe_api"></script>
+		<script src="https://www.youtube.com/iframe_api" sameSite="None"></script>
+
 		<title>Movie Review</title>
 	</head>
 	<body>
@@ -102,7 +103,45 @@
 				</div>
 			</section>
 
-			<section class="trailer" id="player"></section>
+			<section class="movie-videos-wrapper">
+				<div class="movie-videos">
+					<h2 class="title">VIDEOS</h2>
+					<span class="counter">15</span>
+					<span class="icon"
+						><i class="fa fa-angle-right" aria-hidden="true"></i
+					></span>
+				</div>
+				<div class="carousel">
+					<button class="carousel-prev carousel__button is-hidden">
+						<i class="fa fa-angle-left" aria-hidden="true"></i>
+					</button>
+
+					<div class="carousel__track-container">
+						<ul class="carousel__track">
+							<li class="carousel__slide current-slide">
+								<div class="carousel-item" id="player"></div>
+							</li>
+							<li class="carousel__slide">
+								<div class="carousel-item" id="player1"></div>
+							</li>
+							<li class="carousel__slide">
+								<div class="carousel-item" id="player2"></div>
+							</li>
+
+							<li class="carousel__slide">
+								<div class="carousel-item" id="player3"></div>
+							</li>
+
+							<li class="carousel__slide">
+								<div class="carousel-item" id="player4"></div>
+							</li>
+						</ul>
+					</div>
+					<button class="carousel-next carousel__button">
+						<i class="fa fa-angle-right" aria-hidden="true"></i>
+					</button>
+				</div>
+			</section>
 		</div>
 	</body>
 
@@ -111,8 +150,44 @@
 		function onYouTubeIframeAPIReady() {
 			// Create a new YouTube player.
 			var player = new YT.Player('player', {
-				height: '360',
-				width: '640',
+				height: '200',
+				width: '400',
+				videoId: 'BqQNO7BzN08', // Replace with the YouTube video ID you want to play.
+				playerVars: {
+					autoplay: 0, // Set to 1 if you want the video to autoplay.
+				},
+			});
+
+			var player = new YT.Player('player1', {
+				height: '200',
+				width: '400',
+				videoId: 'BqQNO7BzN08', // Replace with the YouTube video ID you want to play.
+				playerVars: {
+					autoplay: 0, // Set to 1 if you want the video to autoplay.
+				},
+			});
+
+			var player = new YT.Player('player2', {
+				height: '200',
+				width: '400',
+				videoId: 'BqQNO7BzN08', // Replace with the YouTube video ID you want to play.
+				playerVars: {
+					autoplay: 0, // Set to 1 if you want the video to autoplay.
+				},
+			});
+
+			var player = new YT.Player('player3', {
+				height: '200',
+				width: '400',
+				videoId: 'BqQNO7BzN08', // Replace with the YouTube video ID you want to play.
+				playerVars: {
+					autoplay: 0, // Set to 1 if you want the video to autoplay.
+				},
+			});
+
+			var player = new YT.Player('player4', {
+				height: '200',
+				width: '400',
 				videoId: 'BqQNO7BzN08', // Replace with the YouTube video ID you want to play.
 				playerVars: {
 					autoplay: 0, // Set to 1 if you want the video to autoplay.

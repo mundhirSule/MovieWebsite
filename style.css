@@ -240,6 +240,11 @@ body {
 	text-align: center;
 }
 
+
+.wrapper{
+	margin-bottom: 50px;
+}
+
 .title {
 	font-size: 25px;
 	border-left: 3px solid orange;
